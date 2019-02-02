@@ -1,20 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ArithmeticCalcualitonAPI.Calculation
+﻿namespace ArithmeticCalcualitonAPI.Calculation
 {
     public interface IAddModel
     {
-        int add(int i, int j);
+        int Add(int i, int j);
     }
 
-
+    /// <summary>
+    /// 
+    /// </summary>
     public class AddModel : IAddModel
     {
-        public int add(int i, int j)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="i"></param>
+        /// <param name="j"></param>
+        /// <returns></returns>
+        public int Add(int i, int j)
         {
             return i + j;
         }

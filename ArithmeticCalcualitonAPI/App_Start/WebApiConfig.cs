@@ -25,11 +25,7 @@ namespace ArithmeticCalcualitonAPI
 
             builder.RegisterType<OperationController>();
 
-            builder.RegisterType<AddModel>().As<IAddModel>().InstancePerLifetimeScope();
-            builder.RegisterType<DifferenceModel>().As<IDifferenceModel>().InstancePerLifetimeScope();
-            builder.RegisterType<ProductModel>().As<IProductModel>().InstancePerLifetimeScope();
-            builder.RegisterType<DivideModel>().As<IDivideModel>().InstancePerLifetimeScope();
-
+            RegisterMathOperations(builder);
 
             // OPTIONAL: Register the Autofac filter provider.
             builder.RegisterWebApiFilterProvider(configs);
@@ -37,17 +33,28 @@ namespace ArithmeticCalcualitonAPI
             // OPTIONAL: Register the Autofac model binder provider.
             builder.RegisterWebApiModelBinderProvider();
 
+
+
             // Set the dependency resolver to be Autofac.
             var container = builder.Build();
             config.DependencyResolver = new AutofacWebApiDependencyResolver(container);
+
+
             // Web API routes
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                routeTemplate: "api/{controller}/{id}/{id2}"
             );
+        }
+
+        private static void RegisterMathOperations(ContainerBuilder builder)
+        {
+            builder.RegisterType<AddModel>().As<IAddModel>().InstancePerLifetimeScope();
+            builder.RegisterType<DifferenceModel>().As<IDifferenceModel>().InstancePerLifetimeScope();
+            builder.RegisterType<ProductModel>().As<IProductModel>().InstancePerLifetimeScope();
+            builder.RegisterType<DivideModel>().As<IDivideModel>().InstancePerLifetimeScope();
         }
     }
 }

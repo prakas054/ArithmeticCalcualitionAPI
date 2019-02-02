@@ -44,6 +44,6 @@ D:\.NET Program\ArithmeticCalcualitonAPI\ArithmeticCalcualitonAPI\bin\System.Net
 D:\.NET Program\ArithmeticCalcualitonAPI\ArithmeticCalcualitonAPI\bin\System.Web.Http.xml
 D:\.NET Program\ArithmeticCalcualitonAPI\ArithmeticCalcualitonAPI\bin\System.Web.Http.WebHost.xml
 D:\.NET Program\ArithmeticCalcualitonAPI\ArithmeticCalcualitonAPI\bin\Newtonsoft.Json.xml
-D:\.NET Program\ArithmeticCalcualitonAPI\ArithmeticCalcualitonAPI\obj\Debug\ArithmeticCalcualitonAPI.csprojResolveAssemblyReference.cache
 D:\.NET Program\ArithmeticCalcualitonAPI\ArithmeticCalcualitonAPI\obj\Debug\ArithmeticCalcualitonAPI.dll
 D:\.NET Program\ArithmeticCalcualitonAPI\ArithmeticCalcualitonAPI\obj\Debug\ArithmeticCalcualitonAPI.pdb
+D:\.NET Program\ArithmeticCalcualitonAPI\ArithmeticCalcualitonAPI\obj\Debug\ArithmeticCalcualitonAPI.csprojResolveAssemblyReference.cache

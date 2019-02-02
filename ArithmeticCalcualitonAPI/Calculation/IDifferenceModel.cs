@@ -8,12 +8,12 @@ namespace ArithmeticCalcualitonAPI.Calculation
 {
     public interface IDifferenceModel
     {
-        int sub(int i, int j);
+        int Sub(int i, int j);
     }
 
     public class DifferenceModel : IDifferenceModel
     {
-        public int sub(int i, int j)
+        public int Sub(int i, int j)
         {
             return i - j;
         }

@@ -8,12 +8,12 @@ namespace ArithmeticCalcualitonAPI.Calculation
 {
     public interface IProductModel
     {
-        int mul(int i, int j);
+        int Mul(int i, int j);
     }
 
    public class ProductModel : IProductModel
     {
-        public int mul(int i, int j)
+        public int Mul(int i, int j)
         {
             return i * j;
         }
